@@ -1,11 +1,280 @@
-<h1>Welcome XYZ Pet Adoption!</h1>
-<p>Consider adopting a pet today. We have cats, dogs, rabbits and more.</p>
 
-<h2>See our cats!</h2>
-<img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Two tabby kittens sleeping together on a couch.">img
 
-<h2>Adopt a cat!</h2>
-<a href="/cats">Visit cats page</a>
+calculator apps that everyone should have on their phone
 
-<h2>Adopt a dog!</h2>
-<a href="/dogs">Visit dogs page</a>
+If you only keep a few apps on your phone, a good calculator app is one of the most useful. Here are the calculator apps that are genuinely worth having for school, daily life, budgeting, engineering, or quick problem-solving.
+
+Best Overall Calculator Apps
+1. Google Calculator
+Best for: Everyday use on Android
+
+Clean and fast
+
+Scientific calculator built in
+
+No ads
+
+Great for students and quick calculations
+
+Simple, reliable, and lightweight. Most Android users honestly don’t need more than this. 
+
+2. Apple Calculator
+Best for: iPhone users
+
+Basic + scientific mode
+
+Unit and currency conversion
+
+Math Notes support on newer Apple devices
+
+Apple’s newer versions are surprisingly powerful now, especially for students. 
+
+Best for Students & Engineering
+3. HiPER Scientific Calculator
+Best for: Engineering and science students
+
+Advanced scientific functions
+
+Fractions, matrices, complex numbers
+
+Looks like a real scientific calculator
+
+Popular among engineering students because it feels close to a Casio calculator. 
+
+4. Desmos Graphing Calculator
+Best for: Graphs and algebra
+
+Amazing graph plotting
+
+Easy equation visualization
+
+Free and powerful
+
+One of the best apps for math learning and graphing equations. 
+
+5. GeoGebra Calculator Suite
+Best for: Advanced math + geometry
+
+Graphing
+
+Geometry tools
+
+3D math visualization
+
+Excellent for school and college-level mathematics. 
+
+Best “Smart” Calculator Apps
+6. Photomath
+Best for: Learning math step-by-step
+
+Scan equations with camera
+
+Shows solving steps
+
+Great for homework help
+
+Useful for understanding how to solve problems, not just getting answers. 
+
+7. Microsoft Math Solver
+Best for: Explaining solutions
+
+Solves typed or handwritten problems
+
+Gives explanations
+
+Covers algebra, calculus, statistics
+
+Very useful if you’re studying STEM subjects. 
+
+Best for Daily Life
+8. ClevCalc
+Best for: Real-world calculations
+
+Includes:
+
+GPA calculator
+
+Currency converter
+
+Loan calculator
+
+Fuel cost calculator
+
+Discount calculator
+
+This is more of an “everything utility calculator.” 
+
+9. All-in-One Calculator
+Best for: One app for everything
+
+75+ calculators and converters
+
+Finance, health, math, unit conversion
+
+Good for productivity
+
+Excellent if you hate downloading separate utility apps. 
+
+Most Beautiful / Premium Calculator Apps
+10. PCalc
+Best for: Power users on iPhone/iPad
+
+Highly customizable
+
+Advanced scientific tools
+
+Professional-grade
+
+A favorite among tech enthusiasts and engineers on Apple devices. 
+
+Quick Recommendations
+Best for Android: Google Calculator
+
+Best for iPhone: Apple Calculator or PCalc
+
+Best for engineering students: HiPER Scientific Calculator
+
+Best for graphing: Desmos
+
+Best for homework help: Photomath
+
+Best all-in-one utility app: ClevCalc
+
+If you want, I can also give:
+
+the best calculator apps with no ads
+
+the best apps for JEE/engineering students
+
+the top hidden underrated calculator apps
+
+or the best calculator widgets for home screens.
+
+
+give me a code
+
+What kind of code do you want?
+
+For example:
+
+Python code
+
+HTML/CSS website code
+
+Calculator app code
+
+C/C++/Java program
+
+QR code
+
+Discount/redeem code
+
+Game code
+
+Tell me what you want the code to do.
+
+
+calculator app code
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator App</title>
+  <style>
+    body {
+      font-family: Arial;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f2f2f2;
+    }
+
+    .calculator {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px gray;
+    }
+
+    #display {
+      width: 100%;
+      height: 50px;
+      margin-bottom: 10px;
+      font-size: 24px;
+      text-align: right;
+      padding-right: 10px;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 70px);
+      gap: 10px;
+    }
+
+    button {
+      height: 60px;
+      font-size: 20px;
+      border: none;
+      border-radius: 8px;
+      background: #3498db;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #2980b9;
+    }
+  </style>
+</head>
+<body>
+
+<div class="calculator">
+  <input type="text" id="display" disabled>
+
+  <div class="buttons">
+    <button onclick="clearDisplay()">C</button>
+    <button onclick="append('/')">/</button>
+    <button onclick="append('*')">*</button>
+    <button onclick="append('-')">-</button>
+
+    <button onclick="append('7')">7</button>
+    <button onclick="append('8')">8</button>
+    <button onclick="append('9')">9</button>
+    <button onclick="append('+')">+</button>
+
+    <button onclick="append('4')">4</button>
+    <button onclick="append('5')">5</button>
+    <button onclick="append('6')">6</button>
+    <button onclick="calculate()">=</button>
+
+    <button onclick="append('1')">1</button>
+    <button onclick="append('2')">2</button>
+    <button onclick="append('3')">3</button>
+    <button onclick="append('0')">0</button>
+  </div>
+</div>
+
+<script>
+  let display = document.getElementById("display");
+
+  function append(value) {
+    display.value += value;
+  }
+
+  function clearDisplay() {
+    display.value = "";
+  }
+
+  function calculate() {
+    try {
+      display.value = eval(display.value);
+    } catch {
+      display.value = "Error";
+    }
+  }
+</script>
+
+</body>
+</html>
+
